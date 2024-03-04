@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import L from 'leaflet'
+import L, { LatLngExpression } from 'leaflet'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import MarkerIcon from '../../node_modules/leaflet/dist/images/marker-icon.png'
 import MarkerShadow from '../../node_modules/leaflet/dist/images/marker-shadow.png'
@@ -8,7 +8,7 @@ import 'leaflet/dist/leaflet.css'
 
 const Map = () => {
 
-    const [coord, setCoord] = useState([51.505, -0.09])
+    const [coord, setCoord] = useState<LatLngExpression>([51.505, -0.09])
 
     const SearchLocation = () => {
         return (
