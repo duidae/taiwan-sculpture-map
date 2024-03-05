@@ -2,20 +2,16 @@
 import {useState} from "react"
 import L, {LatLngExpression} from "leaflet"
 import {MapContainer, TileLayer, Marker, Popup} from "react-leaflet"
+import {TAIPEI_CENTER} from "@/app/constant"
+
+/*
 import MarkerIcon from "../../node_modules/leaflet/dist/images/marker-icon.png"
 import MarkerShadow from "../../node_modules/leaflet/dist/images/marker-shadow.png"
+*/
 import "leaflet/dist/leaflet.css"
 
 const Map = () => {
-  const [coord, setCoord] = useState<LatLngExpression>([51.505, -0.09])
-
-  const SearchLocation = () => {
-    return (
-      <div className="search-location">
-        <input type="text" placeholder="Search Location" />
-      </div>
-    )
-  }
+  const [coord, setCoord] = useState<LatLngExpression>(TAIPEI_CENTER as LatLngExpression)
 
   const GetMyLocation = () => {
     const getMyLocation = () => {
@@ -37,8 +33,6 @@ const Map = () => {
 
   return (
     <div>
-      <SearchLocation />
-      <GetMyLocation />
       <MapContainer
         style={{
           height: "100vh",
@@ -53,6 +47,7 @@ const Map = () => {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
 
+        {/*
         <Marker
           icon={
             new L.Icon({
@@ -65,12 +60,13 @@ const Map = () => {
               shadowSize: [41, 41]
             })
           }
-          position={[51.505, -0.09]}
+          position={TAIPEI_CENTER  as LatLngExpression}
         >
           <Popup>
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
         </Marker>
+        */}
       </MapContainer>
     </div>
   )
