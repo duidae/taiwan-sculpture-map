@@ -2,7 +2,7 @@
 import {useState} from "react"
 import L, {LatLngExpression} from "leaflet"
 import {MapContainer, TileLayer, Marker, Popup} from "react-leaflet"
-import {TAIPEI_CENTER} from "@/app/constant"
+import {TAIPEI_CENTER, DEFAULT_ZOOM} from "@/app/constant"
 
 /*
 import MarkerIcon from "../../node_modules/leaflet/dist/images/marker-icon.png"
@@ -39,7 +39,7 @@ const Map = () => {
           width: "100vw"
         }}
         center={coord}
-        zoom={13}
+        zoom={DEFAULT_ZOOM}
         scrollWheelZoom={false}
       >
         <TileLayer
