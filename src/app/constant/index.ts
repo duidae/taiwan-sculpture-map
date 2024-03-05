@@ -1,6 +1,8 @@
-export const HOME = "https://urban-renewal-eye.vercel.app/"
+export const HOME_URL = "https://urban-renewal-eye.vercel.app/"
 export const FB_FAN_PAGE = "https://www.facebook.com/urbanrenewaleye"
 export const GITHUB_REPO = "https://github.com/duidae/UrbanRenewalEye"
+
+export const APP_NAME = "都市更新天眼通"
 
 export enum TaipeiDistrict {
   Shilin = "士林區",
