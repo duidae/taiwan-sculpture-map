@@ -7,7 +7,7 @@ const DynamicMap = dynamic(() => import("@/app/component/map"), {
 
 export default function Home() {
   return (
-    <main>
+    <main className="relative flex flex-col items-center">
       <Header />
       <DynamicMap />
     </main>
