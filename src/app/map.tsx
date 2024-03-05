@@ -33,15 +33,7 @@ const Map = () => {
 
   return (
     <div>
-      <MapContainer
-        style={{
-          height: "100vh",
-          width: "100vw"
-        }}
-        center={coord}
-        zoom={DEFAULT_ZOOM}
-        scrollWheelZoom={false}
-      >
+      <MapContainer className="w-screen h-screen" center={coord} zoom={DEFAULT_ZOOM} scrollWheelZoom={false}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
