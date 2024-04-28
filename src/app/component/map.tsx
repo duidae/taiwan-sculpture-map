@@ -13,6 +13,9 @@ import "leaflet/dist/leaflet.css"
 const Map = () => {
   const [coord, setCoord] = useState<LatLngExpression>(TAIWAN_CENTER as LatLngExpression)
 
+  // TODO: reset map btn
+  // TODO: where am i btn
+  // TODO: search location input
   const GetMyLocation = () => {
     const getMyLocation = () => {
       if (navigator.geolocation) {
@@ -32,6 +35,7 @@ const Map = () => {
   }
 
   // TODO: fetch link og
+  // TODO: show popup by hover instead of click
   const caseMarkers = cases.map((c, cIndex) => {
     return (
       <Marker
