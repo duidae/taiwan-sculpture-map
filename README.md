@@ -1,8 +1,8 @@
-# taiwan-homicide: 臺灣兇殺案地圖
+# taiwan-homicide: 臺灣兇殺地圖
 
 ## Background
 
-法網恢恢疏而不漏，兇殺案總是可以讓我們窺見人性最幽暗的一面。
+法網恢恢疏而不漏，兇殺案總是可以讓我們窺見人性最幽暗的一面。God's mill grinds slow but sure/Justice has long arms. Homicide can always give us a glimpse into the darkest side of human nature.💀
 
 ## Reference
 
