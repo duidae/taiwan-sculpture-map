@@ -1,4 +1,4 @@
-# taiwan-homicide: 臺灣兇殺地圖 Taiwan homicide map
+# 臺灣兇殺地圖 Taiwan homicide map
 
 ## Background
 
