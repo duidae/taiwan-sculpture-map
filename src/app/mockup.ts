@@ -15,6 +15,17 @@ export const cases: Case[] = [
   {
     info: [
       {
+        title: "華山草原分屍案",
+        date: "2018/05/31",
+        link: "https://zh.wikipedia.org/zh-tw/%E8%8F%AF%E5%B1%B1%E8%8D%89%E5%8E%9F%E5%88%86%E5%B1%8D%E6%A1%88"
+      }
+    ],
+    address: "臺北市中正區華山大草原",
+    lnglat: [25.046667, 121.525]
+  },
+  {
+    info: [
+      {
         title: "井口真理子命案",
         date: "1990/04/02",
         link: "https://zh.wikipedia.org/zh-tw/%E4%BA%95%E5%8F%A3%E7%9C%9F%E7%90%86%E5%AD%90%E5%91%BD%E6%A1%88"
