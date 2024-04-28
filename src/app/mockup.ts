@@ -31,7 +31,7 @@ export const cases: Case[] = [
         link: "https://zh.wikipedia.org/zh-tw/%E4%BA%95%E5%8F%A3%E7%9C%9F%E7%90%86%E5%AD%90%E5%91%BD%E6%A1%88"
       },
       {
-        title: "姐弟戀殺人分屍",
+        title: "姐弟戀殺人分屍案",
         date: "2019/01/08",
         link: "https://www.mirrormedia.mg/story/20190202soc002"
       }
