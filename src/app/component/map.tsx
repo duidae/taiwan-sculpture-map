@@ -31,6 +31,7 @@ const Map = () => {
     )
   }
 
+  // TODO: fetch link og
   const caseMarkers = cases.map(c => {
     return (
       <Marker

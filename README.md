@@ -1,12 +1,13 @@
-# taiwan-homicide: 臺灣兇殺地圖
+# taiwan-homicide: 臺灣兇殺地圖 Taiwan homicide map
 
 ## Background
 
-法網恢恢疏而不漏，兇殺案總是可以讓我們窺見人性最幽暗的一面。God's mill grinds slow but sure/Justice has long arms. Homicide can always give us a glimpse into the darkest side of human nature.💀
+法網恢恢疏而不漏，兇殺案總是可以讓我們窺見人性最幽暗的一面。God's mill grinds slow but sure/Justice has long arms. Homicide cases can always give us a glimpse into the darkest side of human nature.💀
 
 ## Reference
 
 - [重案回顧](https://www.nownews.com/news/6414054)
+- [地址轉經緯度](https://littlehorseboy.github.io/getCurrentPosition-test/addressToCoords.html)
 
 ## Getting Started
 
