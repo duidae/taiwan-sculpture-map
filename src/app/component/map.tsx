@@ -32,9 +32,10 @@ const Map = () => {
   }
 
   // TODO: fetch link og
-  const caseMarkers = cases.map(c => {
+  const caseMarkers = cases.map((c, cIndex) => {
     return (
       <Marker
+        key={`marker-${cIndex}`}
         icon={
           new L.Icon({
             iconUrl: MarkerIcon.src,
@@ -49,14 +50,14 @@ const Map = () => {
         position={c.lnglat as LatLngExpression}
       >
         <Popup>
-          {c.info.map(i => {
+          {c.info.map((i, iIndex) => {
             return (
-              <>
+              <span key={`case-${iIndex}`}>
                 <a className="text-lg" href={i.link} target="_blank" rel="noopener noreferrer">
                   {`${i.date} ${i.title}`}
                 </a>
                 <br />
-              </>
+              </span>
             )
           })}
           <span className="text-lg">{c.address}</span>
