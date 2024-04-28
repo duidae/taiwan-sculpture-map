@@ -11,12 +11,12 @@ export const TAIPEI_CENTER = [25.038357847174, 121.54770626982]
 
 type Info = {
   title: string
-  address: string
   date: string
   link: string
 }
 
 export type Case = {
   info: Info[]
+  address: string
   lnglat: [number, number]
 }

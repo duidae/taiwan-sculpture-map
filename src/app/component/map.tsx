@@ -52,17 +52,14 @@ const Map = () => {
           {c.info.map(i => {
             return (
               <>
-                {`${i.date} ${i.title}`}
-                <br />
-                {i.address}
-                <br />
-                <a href={i.link} target="_blank" rel="noopener noreferrer">
-                  連結
+                <a className="text-lg" href={i.link} target="_blank" rel="noopener noreferrer">
+                  {`${i.date} ${i.title}`}
                 </a>
                 <br />
               </>
             )
           })}
+          <span className="text-lg">{c.address}</span>
         </Popup>
       </Marker>
     )
