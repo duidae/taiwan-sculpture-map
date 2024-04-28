@@ -9,10 +9,14 @@ export const DEFAULT_ZOOM = 8
 export const TAIWAN_CENTER = [23.97565, 120.9738819]
 export const TAIPEI_CENTER = [25.038357847174, 121.54770626982]
 
-export type Case = {
+type Info = {
   title: string
   address: string
   date: string
   link: string
+}
+
+export type Case = {
+  info: Info[]
   lnglat: [number, number]
 }

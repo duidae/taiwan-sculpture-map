@@ -49,14 +49,20 @@ const Map = () => {
         position={c.lnglat as LatLngExpression}
       >
         <Popup>
-          {`${c.date} ${c.title}`}
-          <br />
-          {c.address}
-          <br />
-          <a href={c.link} target="_blank" rel="noopener noreferrer">
-            連結
-          </a>
-          <br />
+          {c.info.map(i => {
+            return (
+              <>
+                {`${i.date} ${i.title}`}
+                <br />
+                {i.address}
+                <br />
+                <a href={i.link} target="_blank" rel="noopener noreferrer">
+                  連結
+                </a>
+                <br />
+              </>
+            )
+          })}
         </Popup>
       </Marker>
     )
