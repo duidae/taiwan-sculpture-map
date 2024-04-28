@@ -1,12 +1,13 @@
 import type {Metadata} from "next"
 import {Inter} from "next/font/google"
+import {APP_NAME, APP_DESC} from "@/app/constant"
 import "./globals.css"
 
 const inter = Inter({subsets: ["latin"]})
 
 export const metadata: Metadata = {
-  title: "都市更新天眼通",
-  description: "臺北市都市更新地圖(Urban renewal map for Taipei city)"
+  title: APP_NAME,
+  description: APP_DESC
 }
 
 export default function RootLayout({
