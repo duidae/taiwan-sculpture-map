@@ -49,13 +49,13 @@ const Map = () => {
         position={c.lnglat as LatLngExpression}
       >
         <Popup>
-          {c.title}
+          {`${c.date} ${c.title}`}
           <br />
           {c.address}
           <br />
-          {c.date}
-          <br />
-          <a href={c.link}>連結</a>
+          <a href={c.link} target="_blank" rel="noopener noreferrer">
+            連結
+          </a>
           <br />
         </Popup>
       </Marker>
@@ -65,11 +65,11 @@ const Map = () => {
   return (
     <div className="absolute top-0 w-screen h-screen z-0">
       <MapContainer className="w-full h-full" center={TAIWAN_CENTER as LatLngExpression} zoom={DEFAULT_ZOOM} scrollWheelZoom={true}>
+        {caseMarkers}
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        {caseMarkers}
       </MapContainer>
     </div>
   )
