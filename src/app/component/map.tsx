@@ -70,6 +70,8 @@ const Map = () => {
     )
   })
 
+  const commandments = <img style={{zIndex: '999'}} className='absolute bottom-0 right-0 mb-5' src={'/commandments.png'}/>
+
   return (
     <div className="absolute top-0 w-screen h-screen z-0">
       <MapContainer className="w-full h-full" center={TAIWAN_CENTER as LatLngExpression} zoom={DEFAULT_ZOOM} scrollWheelZoom={true}>
@@ -79,6 +81,7 @@ const Map = () => {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
       </MapContainer>
+      {commandments}
     </div>
   )
 }
