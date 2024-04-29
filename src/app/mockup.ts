@@ -36,7 +36,7 @@ export const cases: Case[] = [
         link: "https://www.mirrormedia.mg/story/20190202soc002"
       }
     ],
-    address: "台南市東區崇明十三街11巷67號",
+    address: "台南市東區崇明十三街11巷",
     lnglat: [22.974937000766, 120.224706027761]
   }
 ]
