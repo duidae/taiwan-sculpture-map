@@ -46,7 +46,29 @@ export const cases: Case[] = [
     address: "台北市濟南路二段六十二巷",
     lnglat: []
   },
+  {
+    info: [
+      {
+        title: "殺妻分屍案",
+        date: "2018/05/26",
+        link: "https://jirs.judicial.gov.tw/GNNWS/NNWSS002.asp?id=482621"
+      }
+    ],
+    address: "桃園市龍安街14巷",
+    lnglat: []
+  },
   */
+  {
+    info: [
+      {
+        title: "林清岳弒親案",
+        date: "1998/10/11",
+        link: "https://zh.wikipedia.org/zh-tw/%E6%9E%97%E6%B8%85%E5%B2%B3%E5%BC%92%E8%A6%AA%E6%A1%88"
+      }
+    ],
+    address: "新北市林口區下福",
+    lnglat: [25.10856558267486, 121.31754282872986],
+  },
   {
     info: [
       {
