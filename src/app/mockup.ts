@@ -34,6 +34,19 @@ export const cases: Case[] = [
     address: "新北市板橋區國光路",
     lnglat: [25.017834103985, 121.458076625525],
   },
+  /*
+  {
+    info: [
+      {
+        title: "江子翠分屍案",
+        date: "1977/09",
+        link: "https://zh.wikipedia.org/zh-tw/%E6%B1%9F%E5%AD%90%E7%BF%A0%E5%88%86%E5%B1%8D%E6%A1%88"
+      }
+    ],
+    address: "台北市濟南路二段六十二巷",
+    lnglat: []
+  },
+  */
   {
     info: [
       {
