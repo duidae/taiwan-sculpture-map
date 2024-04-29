@@ -26,6 +26,17 @@ export const cases: Case[] = [
   {
     info: [
       {
+        title: "板橋分屍案",
+        date: "2018/05/21",
+        link: "https://zh.wikipedia.org/wiki/%E6%9D%BF%E6%A9%8B%E5%88%86%E5%B1%8D%E6%A1%88"
+      }
+    ],
+    address: "新北市板橋區國光路",
+    lnglat: [25.017834103985, 121.458076625525],
+  },
+  {
+    info: [
+      {
         title: "井口真理子命案",
         date: "1990/04/02",
         link: "https://zh.wikipedia.org/zh-tw/%E4%BA%95%E5%8F%A3%E7%9C%9F%E7%90%86%E5%AD%90%E5%91%BD%E6%A1%88"
