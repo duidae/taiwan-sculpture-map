@@ -7,9 +7,9 @@ export const Sculptures: Sculpture[] = [
     desc: "",
     date: "",
     location: "陽明山陽明公園王陽明雕像旁",
-    material: '玻璃纖維',
+    material: "玻璃纖維",
     lnglat: [25.159314043092394, 121.54010546105914],
-    link: "https://news.ltn.com.tw/news/life/paper/1508479",
+    link: "https://news.ltn.com.tw/news/life/paper/1508479"
   },
   {
     title: "龍馬",
@@ -17,9 +17,9 @@ export const Sculptures: Sculpture[] = [
     desc: "",
     date: "",
     location: "台中市石岡區東勢大橋(橋頭與橋尾各兩隻)",
-    material: '水泥',
+    material: "水泥",
     lnglat: [24.261166172520724, 120.81974033210538],
-    link: "https://zh.wikipedia.org/zh-tw/%E6%9D%B1%E5%8B%A2%E5%A4%A7%E6%A9%8B%E9%BE%8D%E9%A6%AC",
+    link: "https://zh.wikipedia.org/zh-tw/%E6%9D%B1%E5%8B%A2%E5%A4%A7%E6%A9%8B%E9%BE%8D%E9%A6%AC"
   },
   {
     title: "中央二二八紀念碑",
@@ -28,7 +28,7 @@ export const Sculptures: Sculpture[] = [
     date: "1995/02/28",
     location: "臺北市中正區二二八和平紀念公園",
     lnglat: [25.041373499043306, 121.51503019663636],
-    link: "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%A4%AE%E4%BA%8C%E4%BA%8C%E5%85%AB%E7%B4%80%E5%BF%B5%E7%A2%91",
+    link: "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%A4%AE%E4%BA%8C%E4%BA%8C%E5%85%AB%E7%B4%80%E5%BF%B5%E7%A2%91"
   },
   {
     title: "鹿窟事件紀念碑",
@@ -37,7 +37,7 @@ export const Sculptures: Sculpture[] = [
     date: "",
     location: "鹿窟事件紀念公園",
     lnglat: [25.030174171516315, 121.66580918808859],
-    link: "https://zh.wikipedia.org/zh-tw/%E9%B9%BF%E7%AA%9F%E5%9F%BA%E5%9C%B0%E6%A1%88",
+    link: "https://zh.wikipedia.org/zh-tw/%E9%B9%BF%E7%AA%9F%E5%9F%BA%E5%9C%B0%E6%A1%88"
   },
   {
     title: "無限生命",
@@ -46,7 +46,7 @@ export const Sculptures: Sculpture[] = [
     date: "",
     location: "台北101大樓面信義路五段門旁",
     lnglat: [25.033017113822808, 121.56496323616454],
-    link: "https://kmxart.cc/archives/26442",
+    link: "https://kmxart.cc/archives/26442"
   },
   {
     title: "",
@@ -55,6 +55,6 @@ export const Sculptures: Sculpture[] = [
     date: "",
     location: "國立自然科學博物館",
     lnglat: [24.157314211745966, 120.66609923669102],
-    link: "",
-  },
+    link: ""
+  }
 ]

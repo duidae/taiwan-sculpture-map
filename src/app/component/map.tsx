@@ -1,5 +1,5 @@
 "use client"
-import {useState} from "react"
+import {useState, useRef, useMemo} from "react"
 import L, {LatLngExpression} from "leaflet"
 import {MapContainer, TileLayer, Marker, Popup} from "react-leaflet"
 import {TAIWAN_CENTER, DEFAULT_ZOOM} from "@/app/constant"
@@ -35,10 +35,20 @@ const Map = () => {
   }
 
   // TODO: fetch link og
-  // TODO: show popup by hover instead of click
   const caseMarkers = Sculptures.map((sculpture, cIndex) => {
+    const markerRef = useRef<L.Marker>(null)
+
+    const eventHandlers = useMemo(
+      () => ({
+        mouseover() {
+          markerRef?.current?.openPopup()
+        }
+      }),
+      []
+    )
     return (
       <Marker
+        ref={markerRef}
         key={`marker-${cIndex}`}
         icon={
           new L.Icon({
@@ -51,13 +61,23 @@ const Map = () => {
             shadowSize: [41, 41]
           })
         }
+        eventHandlers={eventHandlers}
         position={sculpture.lnglat as LatLngExpression}
       >
         <Popup>
-          <span className="text-lg font-bold">{sculpture.title} - {sculpture.artist}</span><br/>
-          <span className="text-lg">{sculpture.location}</span><br/>
-          <span className="text-base">{sculpture.desc}</span><br/>
-          {sculpture.link && <a className="text-lg" href={sculpture.link}>連結</a>}
+          <span className="text-lg font-bold">
+            {sculpture.title} - {sculpture.artist}
+          </span>
+          <br />
+          <span className="text-lg">{sculpture.location}</span>
+          <br />
+          <span className="text-base">{sculpture.desc}</span>
+          <br />
+          {sculpture.link && (
+            <a className="text-lg" href={sculpture.link}>
+              連結
+            </a>
+          )}
         </Popup>
       </Marker>
     )
