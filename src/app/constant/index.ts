@@ -1,8 +1,8 @@
 export const HOME_URL = "https://taiwan-homicide.vercel.app/"
 
-export const APP_NAME = "台灣兇殺地圖 Taiwan homicide map"
+export const APP_NAME = "台灣雕塑地圖 Taiwan sculpture map"
 export const APP_DESC =
-  "法網恢恢疏而不漏，兇殺案總是可以讓我們窺見人性最幽暗的一面。God's mill grinds slow but sure/Justice has long arms. Homicide cases can always give us a glimpse into the darkest side of human nature.💀"
+  "欣賞台灣雕塑之美"
 
 export const DEFAULT_ZOOM = 8
 
@@ -15,7 +15,7 @@ type Info = {
   link: string
 }
 
-export type Case = {
+export type Sculpture = {
   info: Info[]
   address: string
   lnglat: [number, number]
