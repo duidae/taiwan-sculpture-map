@@ -11,6 +11,7 @@ export const TAIPEI_CENTER = [25.038357847174, 121.54770626982]
 export type Sculpture = {
   title: string
   artist: string
+  material?: string
   desc: string
   date: string
   location: string
