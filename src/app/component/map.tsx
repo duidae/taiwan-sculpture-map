@@ -36,7 +36,7 @@ const Map = () => {
 
   // TODO: fetch link og
   // TODO: show popup by hover instead of click
-  const caseMarkers = Sculptures.map((c, cIndex) => {
+  const caseMarkers = Sculptures.map((sculpture, cIndex) => {
     return (
       <Marker
         key={`marker-${cIndex}`}
@@ -51,20 +51,11 @@ const Map = () => {
             shadowSize: [41, 41]
           })
         }
-        position={c.lnglat as LatLngExpression}
+        position={sculpture.lnglat as LatLngExpression}
       >
         <Popup>
-          {c.info.map((i, iIndex) => {
-            return (
-              <span key={`case-${iIndex}`}>
-                <a className="text-lg" href={i.link} target="_blank" rel="noopener noreferrer">
-                  {`${i.date} ${i.title}`}
-                </a>
-                <br />
-              </span>
-            )
-          })}
-          <span className="text-lg">{c.address}</span>
+          <span className="text-lg">{sculpture.title}-{sculpture.artist}</span><br/>
+          <span className="text-lg">{sculpture.location}</span>
         </Popup>
       </Marker>
     )
