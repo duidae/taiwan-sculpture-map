@@ -54,8 +54,10 @@ const Map = () => {
         position={sculpture.lnglat as LatLngExpression}
       >
         <Popup>
-          <span className="text-lg">{sculpture.title}-{sculpture.artist}</span><br/>
-          <span className="text-lg">{sculpture.location}</span>
+          <span className="text-lg font-bold">{sculpture.title} - {sculpture.artist}</span><br/>
+          <span className="text-lg">{sculpture.location}</span><br/>
+          <span className="text-base">{sculpture.desc}</span><br/>
+          {sculpture.link && <a className="text-lg" href={sculpture.link}>連結</a>}
         </Popup>
       </Marker>
     )

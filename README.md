@@ -6,8 +6,7 @@
 
 ## Reference
 
-- [地址轉經緯度](https://littlehorseboy.github.io/getCurrentPosition-test/addressToCoords.html)
-- [點擊地圖取得經緯度](https://developers.google.com/maps/documentation/javascript/examples/event-click-latlng)
+- [google map右鍵取得經緯度](https://www.google.com.tw/maps)
 
 ## Getting Started
 
