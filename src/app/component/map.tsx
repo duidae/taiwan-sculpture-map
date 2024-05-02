@@ -35,7 +35,7 @@ const Map = () => {
   }
 
   // TODO: fetch link og
-  const caseMarkers = Sculptures.map((sculpture, cIndex) => {
+  const sculptureMarkers = Sculptures.map((sculpture, cIndex) => {
     const markerRef = useRef<L.Marker>(null)
 
     const eventHandlers = useMemo(
@@ -46,39 +46,44 @@ const Map = () => {
       }),
       []
     )
+
+    const markerIcon = new L.Icon({
+      iconUrl: MarkerIcon.src,
+      iconRetinaUrl: MarkerIcon.src,
+      iconSize: [25, 41],
+      iconAnchor: [12.5, 41],
+      popupAnchor: [0, -41],
+      shadowUrl: MarkerShadow.src,
+      shadowSize: [41, 41]
+    })
+
+    const sculptureInfo = (
+      <>
+        <span className="text-lg font-bold">
+          {sculpture.title} - {sculpture.artist}
+        </span>
+        <br />
+        <span className="text-lg">{sculpture.location}</span>
+        <br />
+        <span className="text-base">{sculpture.desc}</span>
+        <br />
+        {sculpture.link && (
+          <a className="text-lg" href={sculpture.link}>
+            連結
+          </a>
+        )}
+      </>
+    )
+
     return (
       <Marker
         ref={markerRef}
         key={`marker-${cIndex}`}
-        icon={
-          new L.Icon({
-            iconUrl: MarkerIcon.src,
-            iconRetinaUrl: MarkerIcon.src,
-            iconSize: [25, 41],
-            iconAnchor: [12.5, 41],
-            popupAnchor: [0, -41],
-            shadowUrl: MarkerShadow.src,
-            shadowSize: [41, 41]
-          })
-        }
+        icon={markerIcon}
         eventHandlers={eventHandlers}
         position={sculpture.lnglat as LatLngExpression}
       >
-        <Popup>
-          <span className="text-lg font-bold">
-            {sculpture.title} - {sculpture.artist}
-          </span>
-          <br />
-          <span className="text-lg">{sculpture.location}</span>
-          <br />
-          <span className="text-base">{sculpture.desc}</span>
-          <br />
-          {sculpture.link && (
-            <a className="text-lg" href={sculpture.link}>
-              連結
-            </a>
-          )}
-        </Popup>
+        <Popup>{sculptureInfo}</Popup>
       </Marker>
     )
   })
@@ -86,7 +91,7 @@ const Map = () => {
   return (
     <div className="absolute top-0 w-screen h-screen z-0">
       <MapContainer className="w-full h-full" center={TAIWAN_CENTER as LatLngExpression} zoom={DEFAULT_ZOOM} scrollWheelZoom={true}>
-        {caseMarkers}
+        {sculptureMarkers}
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
