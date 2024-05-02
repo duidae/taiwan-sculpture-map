@@ -1,8 +1,8 @@
-# 臺灣雕塑地圖 Taiwan sculpture map
+# 台灣戶外雕塑地圖 Taiwan outdoor sculpture map
 
 ## Background
 
-標註台灣的雕塑
+標註台灣的戶外雕塑 Mark Taiwanese outdoor sculptures.
 
 ## Reference
 

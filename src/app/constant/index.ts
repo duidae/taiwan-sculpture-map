@@ -1,6 +1,6 @@
 export const HOME_URL = "https://taiwan-sculpture-map.vercel.app/"
 
-export const APP_NAME = "台灣雕塑地圖 Taiwan sculpture map"
+export const APP_NAME = "台灣戶外雕塑地圖 Taiwan outdoor sculpture map"
 export const APP_DESC = "欣賞台灣雕塑之美 Appreciate the beauty of Taiwanese sculptures."
 
 export const DEFAULT_ZOOM = 8
