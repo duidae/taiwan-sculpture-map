@@ -22,6 +22,16 @@ export const Sculptures: Sculpture[] = [
     link: "https://zh.wikipedia.org/zh-tw/%E6%9D%B1%E5%8B%A2%E5%A4%A7%E6%A9%8B%E9%BE%8D%E9%A6%AC"
   },
   {
+    title: "鳳凰來儀(四)",
+    artist: "楊英風",
+    desc: "",
+    date: "1991",
+    location: "台北富邦營業部前廣場",
+    material: "不銹鋼",
+    lnglat: [25.056499502581698, 121.5222805690955],
+    link: "https://www.yuyuyang.com.tw/yuyuyang_works_area_c.php?id=91&target_1=%E5%8F%B0%E7%81%A3%E5%9C%B0%E5%8D%80&target_2=%E5%8C%97%E9%83%A8%E5%9C%B0%E5%8D%80&target_3=%E5%85%A8%E9%83%A8"
+  },
+  {
     title: "中央二二八紀念碑",
     artist: "王俊雄、鄭自財、張安清、陳振豐",
     desc: "王俊雄等人設計概念是因政府未以應有的法治秩序來治理，以致貪污、枉法橫生，導致人民抗爭，故主題在於從無秩序導出秩序來。",
