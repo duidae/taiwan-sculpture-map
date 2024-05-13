@@ -66,5 +66,23 @@ export const Sculptures: Sculpture[] = [
     location: "國立自然科學博物館",
     lnglat: [24.157314211745966, 120.66609923669102],
     link: ""
-  }
+  },
+  {
+    title: "基隆二二八紀念碑",
+    artist: "",
+    desc: "",
+    date: "1995",
+    location: "基隆中正公園",
+    lnglat: [25.137069473519347, 121.75798587801135],
+    link: "https://zh.wikipedia.org/zh-tw/%E4%BA%8C%E4%BA%8C%E5%85%AB%E5%92%8C%E5%B9%B3%E7%B4%80%E5%BF%B5%E7%A2%91"
+  },
+  {
+    title: "八堵站二二八紀念碑",
+    artist: "",
+    desc: "",
+    date: "1994",
+    location: "基隆市暖暖區八堵車站",
+    lnglat: [25.108781, 121.729937],
+    link: "https://zh.wikipedia.org/wiki/%E5%85%AB%E5%A0%B5%E7%AB%99%E4%BA%8C%E4%BA%8C%E5%85%AB%E7%B4%80%E5%BF%B5%E7%A2%91"
+  },
 ]
