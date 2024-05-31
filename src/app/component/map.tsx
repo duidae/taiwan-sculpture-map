@@ -3,6 +3,7 @@ import {useState, useRef, useMemo} from "react"
 import L, {LatLngExpression} from "leaflet"
 import {MapContainer, TileLayer, Marker, Popup} from "react-leaflet"
 import {TAIWAN_CENTER, DEFAULT_ZOOM, Sculpture} from "@/app/constant"
+// import {OG} from "@/app/component/og"
 
 import {Sculptures} from "@/app/mockup"
 
@@ -44,10 +45,11 @@ const MarkerComponent = (props: {sculpture: Sculpture}) => {
       <span className="text-base">{sculpture.desc}</span>
       <br />
       {sculpture.link && (
-        <a className="text-lg" href={sculpture.link}>
+        <a className="text-lg" href={sculpture.link} target="_blank" rel="noopener noreferrer">
           連結
         </a>
       )}
+      {/*sculpture.link && <OG link={sculpture.link} />*/}
     </>
   )
 
