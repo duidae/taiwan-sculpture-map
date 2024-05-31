@@ -88,4 +88,13 @@ export const Sculptures: Sculpture[] = [
     lnglat: [25.108781, 121.729937],
     link: "https://zh.wikipedia.org/wiki/%E5%85%AB%E5%A0%B5%E7%AB%99%E4%BA%8C%E4%BA%8C%E5%85%AB%E7%B4%80%E5%BF%B5%E7%A2%91"
   },
+  {
+    title: "工藝之樹",
+    artist: "楊北辰老師",
+    desc: "構思它是一雙母性的，具有溫柔優雅氣質的靈巧的一雙手，呼應楊英風老師在70年前為工藝中心所設計的另一雙手。",
+    date: "2024",
+    location: "南投縣草屯鎮中正路573號",
+    lnglat: [23.98099031764318, 120.69185670419765],
+    link: "https://www.youtube.com/watch?v=poxbXcw8CKc"
+  },
 ]
